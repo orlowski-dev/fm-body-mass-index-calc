@@ -1,0 +1,19 @@
+.bmi-result {
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
+  margin-top: 1.875rem;
+  display: grid;
+  gap: 0.75rem;
+  h3,
+  h4,
+  p {
+    color: white;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+}

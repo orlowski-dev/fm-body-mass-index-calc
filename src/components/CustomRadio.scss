@@ -8,8 +8,8 @@
     border-radius: 50%;
     background-color: var(--white);
     border: 1px solid var(--borders);
-    transition: border 0.1s ease-in, background-color 0.1s ease-in,
-      border-width 0.2s;
+    transition: border 0.1s linear, background-color 0.1s linear,
+      border-width 0.2s linear;
     pointer-events: none;
     position: absolute;
     top: 0;

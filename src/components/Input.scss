@@ -1,0 +1,31 @@
+.custom-input {
+  position: relative;
+
+  input {
+    padding: 1.125rem 1.5rem;
+    padding-right: 2.125rem;
+    border: 2px solid var(--borders);
+    border-radius: 1.25rem;
+    width: 100%;
+    transition: border-color 0.1s ease-in;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    &:hover {
+      border-color: var(--blue-15);
+    }
+    &:focus {
+      border-color: var(--blue);
+    }
+  }
+
+  span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--blue);
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 1rem);
+    right: 1.5rem;
+  }
+}
