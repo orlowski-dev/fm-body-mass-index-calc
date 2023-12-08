@@ -1,0 +1,21 @@
+.limitation-card {
+  text-align: left !important;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+  padding: 1.5rem;
+  header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      height: 32px;
+      width: 32px;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+    margin-bottom: 1rem;
+  }
+}
