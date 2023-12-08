@@ -1,9 +1,10 @@
 import "./App.scss";
+import HeroSection from "./components/HeroSection";
 
 const App = () => {
   return (
     <main>
-      <h1>Body mass index calculator</h1>
+      <HeroSection />
     </main>
   );
 };
