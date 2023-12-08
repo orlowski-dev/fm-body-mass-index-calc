@@ -1,0 +1,99 @@
+.bmi-means-section {
+  max-width: 1276px;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: grid;
+  position: relative;
+
+  .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 220px;
+    width: 100%;
+    max-width: 1276px;
+    background-image: url("/images/pattern-curved-line-left.svg");
+    background-repeat: no-repeat;
+    background-position: right 6rem bottom;
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    transition: max-width 0.1s ease-in;
+    height: auto;
+  }
+  article {
+    padding: 24px;
+    h2 {
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .bmi-means-section {
+    img {
+      max-width: 380px;
+      margin: 0 auto;
+    }
+    article {
+      text-align: center;
+      padding: 3rem;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .bmi-means-section {
+    article {
+      padding: unset;
+      padding-right: 3rem;
+      text-align: left;
+      h2 {
+        font-size: 3rem;
+      }
+    }
+    img {
+      transform: translateX(-42px);
+    }
+    grid-template-columns: 45% calc(55% - 24px);
+    gap: 1.5rem;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .bmi-means-section {
+    article {
+      padding: 3rem;
+      text-align: left;
+
+      h2 {
+        margin-bottom: 2.25rem;
+      }
+      align-self: flex-end;
+    }
+    img {
+      transform: unset;
+      max-width: 544px;
+      margin: unset;
+      justify-self: flex-end;
+    }
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .bmi-means-section {
+    .bg-image {
+      display: block;
+    }
+  }
+}
