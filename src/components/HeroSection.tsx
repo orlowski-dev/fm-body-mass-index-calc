@@ -1,3 +1,4 @@
+import Calculator from "./Calculator";
 import "./HeroSection.scss";
 
 const HeroSection = () => (
@@ -14,7 +15,9 @@ const HeroSection = () => (
           your overall health and well-being.
         </p>
       </section>
-      <div className="calculator"></div>
+      <div className="calculator">
+        <Calculator />
+      </div>
     </article>
   </section>
 );

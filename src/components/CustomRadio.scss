@@ -1,0 +1,32 @@
+.custom-radio {
+  position: relative;
+  min-height: 30px;
+  user-select: none;
+  .checkmark-area {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 1px solid var(--borders);
+    transition: border 0.1s ease-in, background-color 0.1s ease-in,
+      border-width 0.2s;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  input {
+    display: none;
+    &:checked ~ .checkmark-area {
+      background-color: var(--blue);
+      border: 8px solid var(--blue-15);
+    }
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    padding: 5px;
+    padding-left: 40px;
+    cursor: pointer;
+  }
+}
